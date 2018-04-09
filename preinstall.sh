@@ -31,7 +31,7 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 417A0893
 $APT update
 
 # download and install golang
-GO_VERSION="1.8.3"
+GO_VERSION="1.10.1"
 GO_INSTALL_PATH="/usr/local"
 download_url="https://storage.googleapis.com/golang/go${GO_VERSION}.linux-amd64.tar.gz"
 if ! $WGET --output-document=- "$download_url" | tar -C "${GO_INSTALL_PATH}" -zxf -; then
